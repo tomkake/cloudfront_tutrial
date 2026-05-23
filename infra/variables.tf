@@ -15,3 +15,9 @@ variable "image_tag" {
   type        = string
   default     = "latest"
 }
+
+variable "enable_cost_project_cost_allocation_tag" {
+  description = "Set true after AWS Billing has discovered the CostProject tag key, then Terraform can activate it as a cost allocation tag."
+  type        = bool
+  default     = false
+}
